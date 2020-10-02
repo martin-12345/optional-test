@@ -22,8 +22,8 @@ public class Book {
         return subTitle;
     }
 
-    public void setSubTitle(Optional<String> subTitle) {
-        this.subTitle = subTitle;
+    public void setSubTitle(Optional<String> optional) {
+        this.subTitle = optional;
     }
 
 	public Optional<UUID> getClientId() {

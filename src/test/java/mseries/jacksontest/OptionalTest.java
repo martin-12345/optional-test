@@ -36,7 +36,8 @@ public class OptionalTest {
 
 		Book book = new Book();
 		book.setTitle("Oliver Twist");
-		book.setSubTitle(Optional.empty());
+		String value=null;
+		book.setSubTitle(Optional.ofNullable(value));
 
 		String result = mapper.writeValueAsString(book);
 		System.out.println(result);
