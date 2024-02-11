@@ -32,11 +32,11 @@ public class MyOptionalTest {
 
     @Test
     public void notNullTest() {
-        String title = "Newstead";
+        String title = "Andy Gibb";
         Optional<byte[]> b = getBook(title);
 
         byte[] pdfArray;
         pdfArray = b.orElseGet(() -> regenerate(title));
-        assertEquals("Newstead", new String(pdfArray));
+        assertEquals("Andy Gibb", new String(pdfArray));
     }
 }
