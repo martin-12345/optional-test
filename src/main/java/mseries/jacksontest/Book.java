@@ -10,6 +10,14 @@ public class Book {
     private Optional<UUID> clientId;
     private UUID clientIdUUID;
 
+    public Book(String title) {
+        this.title = title;
+    }
+
+    public Book(){
+
+    }
+
     public String getTitle() {
         return title;
     }
